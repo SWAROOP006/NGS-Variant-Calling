@@ -22,12 +22,12 @@
      ```bash
      fastq-dump --split-files --gzip -X 500000 ERR11468775
      ```
-   - [View download script](workflow/scripts)
+     
 
 2. **Reference Genome Setup**:
    - Chromosomes 6 and 7 from UCSC hg38.
    - Merged and indexed with BWA.
-   - [Reference genome preparation steps](workflow/ref_genome/).
+   
 
 3. **Quality Control**:
    - FastQC reports for raw and processed data.
