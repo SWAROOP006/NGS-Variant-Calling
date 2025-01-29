@@ -1,9 +1,17 @@
 # NGS Workflow Documentation
 ## Overview
-- **Goal**: This project focuses on identifying somatic variants in whole-genome sequencing (WGS) data from tongue cancer samples and cell lines
+- **Goal**: This project focuses on identifying somatic variants in whole-genome sequencing (WGS) data from tongue cancer samples and cell lines. The workflow leverages industry-standard tools for alignment, quality control, and variant calling, specifically targeting **chromosomes 6 and 7** of the human reference genome (hg38).
 - **Data Source**: [PRJEB62494](https://www.ncbi.nlm.nih.gov/bioproject/PRJEB62494).
 - **Tools Used**:  
   ![GATK](https://img.shields.io/badge/GATK-4.0-blue) ![BWA](https://img.shields.io/badge/BWA-0.7.17-green)
+  - **BWA**: Burrows-Wheeler Aligner for read alignment.
+  - **Samtools**: Processing and indexing BAM files.
+  - **GATK (v4)**: Variant calling with HaplotypeCaller.
+  - **SRA Toolkit**: Downloading raw sequencing data.
+  - **FastQC**: Quality control reports.
+- **Data**:
+  - **Samples**: Three accessions (`ERR11468775`, `ERR11468776`, `ERR11468777`).
+  - **Reference Genome**: hg38 (chromosomes 6 and 7).
 
 ## Workflow Diagram
 ![Workflow](https://mermaid.ink/svg/pako:eNpVjz0LwjAQhP_KkVMoKf5cuoigoJ0c3Eo4k5NcLBeDSP53E0EEL3u7M7M3S1hYwoZ7rHjEhhU9ZtzwxAM3vPDKjR1B6Iq9w8XkAqUoKkFjVJ7qNk9jX5VZ6lq3HtH5g1F8G2H4Zg8Lw-6TfYyBqWcXeO5Gm9mNn9hRj9Yj8aQlHrRjRY8FG3o8cY0b4M6YkF8m4wPvjC7m0P3U)
