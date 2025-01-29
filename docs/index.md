@@ -31,8 +31,7 @@
 
 3. **Quality Control**:
    - FastQC reports for raw and processed data.
-   - Example QC output:  
-     ![FastQC Report](workflow/results/Picture1.png)
+   
 
 4. **Alignment**:
    - BWA-MEM for paired-end alignment.
@@ -44,8 +43,7 @@
 
 5. **Variant Calling**:
    - GATK HaplotypeCaller for germline variants, Mutect2 for somatic variants.
-   - Example output:  
-     ![IGV Screenshot](workflow/results/Picture1.png)
+     
 
 6. **Annotation**: ENSEMBL VEP.
 
