@@ -16,9 +16,38 @@
 
 
 ### Key Steps
-1. **Data Download**: 500,000 reads/sample from SRA.
-2. **Alignment**: BWA-MEM for chr6/chr7.
-3. **Variant Calling**: GATK HaplotypeCaller for germline variants, Mutect2 for somatic variants.
-4. **Annotation**: ENSEMBL VEP.
+1. **Data Acquisition**:
+   - Download raw FASTQ files from SRA (500,000 reads per sample).
+   - Example command:
+     ```bash
+     fastq-dump --split-files --gzip -X 500000 ERR11468775
+     ```
+   - [View download script](workflow/scripts/download_data.sh).
+
+2. **Reference Genome Setup**:
+   - Chromosomes 6 and 7 from UCSC hg38.
+   - Merged and indexed with BWA.
+   - [Reference genome preparation steps](workflow/ref_genome/).
+
+3. **Quality Control**:
+   - FastQC reports for raw and processed data.
+   - Example QC output:  
+     ![FastQC Report](workflow/results/fastqc_report.png)
+
+4. **Alignment**:
+   - BWA-MEM for paired-end alignment.
+   - Samtools for sorting and indexing BAM files.
+   - Example command:
+     ```bash
+     bwa mem ref_genome/hg38_chr6_7.fa sample_1.fastq.gz sample_2.fastq.gz | samtools sort -o sample.bam
+     ```
+
+5. **Variant Calling**:
+   - GATK HaplotypeCaller for germline variants, Mutect2 for somatic variants.
+   - Example output:  
+     ![IGV Screenshot](workflow/results/variants_screenshot.png)
+   - [Variant calling script](workflow/scripts/call_variants.sh).
+
+6. **Annotation**: ENSEMBL VEP.
 
 [Explore the Code →](https://github.com/SWAROOP006/NGS-Variant-Calling/tree/main/workflow/scripts)
