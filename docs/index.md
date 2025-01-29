@@ -45,8 +45,7 @@
 5. **Variant Calling**:
    - GATK HaplotypeCaller for germline variants, Mutect2 for somatic variants.
    - Example output:  
-     ![IGV Screenshot](workflow/results/variants_screenshot.png)
-   - [Variant calling script](workflow/scripts/call_variants.sh).
+     ![IGV Screenshot](workflow/results/Picture1.png)
 
 6. **Annotation**: ENSEMBL VEP.
 
