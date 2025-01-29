@@ -1,0 +1,10 @@
+name: ngs-env
+channels:
+  - bioconda
+  - conda-forge
+dependencies:
+  - bwa
+  - samtools
+  - gatk4
+  - fastqc
+  - sra-tools
