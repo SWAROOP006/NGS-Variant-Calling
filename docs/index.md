@@ -14,4 +14,4 @@
 3. **Variant Calling**: GATK HaplotypeCaller for germline variants, Mutect2 for somatic variants.
 4. **Annotation**: ENSEMBL VEP.
 
-[Explore the Code →](https://github.com/yourusername/ngs-variant-calling/tree/main/workflow/scripts)
+[Explore the Code →](https://github.com/SWAROOP006/NGS-Variant-Calling/tree/main/workflow/scripts)
