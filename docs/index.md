@@ -13,8 +13,7 @@
   - **Samples**: Three accessions (`ERR11468775`, `ERR11468776`, `ERR11468777`).
   - **Reference Genome**: hg38 (chromosomes 6 and 7).
 
-## Workflow Diagram
-![Workflow](https://mermaid.ink/svg/pako:eNpVjz0LwjAQhP_KkVMoKf5cuoigoJ0c3Eo4k5NcLBeDSP53E0EEL3u7M7M3S1hYwoZ7rHjEhhU9ZtzwxAM3vPDKjR1B6Iq9w8XkAqUoKkFjVJ7qNk9jX5VZ6lq3HtH5g1F8G2H4Zg8Lw-6TfYyBqWcXeO5Gm9mNn9hRj9Yj8aQlHrRjRY8FG3o8cY0b4M6YkF8m4wPvjC7m0P3U)
+
 
 ### Key Steps
 1. **Data Download**: 500,000 reads/sample from SRA.
