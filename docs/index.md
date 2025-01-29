@@ -1,6 +1,6 @@
 # NGS Workflow Documentation
 ## Overview
-- **Goal**: Identify somatic/germline variants in tongue cancer WGS data.
+- **Goal**: This project focuses on identifying somatic variants in whole-genome sequencing (WGS) data from tongue cancer samples and cell lines
 - **Data Source**: [PRJEB62494](https://www.ncbi.nlm.nih.gov/bioproject/PRJEB62494).
 - **Tools Used**:  
   ![GATK](https://img.shields.io/badge/GATK-4.0-blue) ![BWA](https://img.shields.io/badge/BWA-0.7.17-green)
