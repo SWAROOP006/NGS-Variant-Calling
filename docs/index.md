@@ -32,7 +32,7 @@
 3. **Quality Control**:
    - FastQC reports for raw and processed data.
    - Example QC output:  
-     ![FastQC Report](//workflow/results/fastqc_report.png)
+     ![FastQC Report](workflow/results/Picture1.png)
 
 4. **Alignment**:
    - BWA-MEM for paired-end alignment.
