@@ -11,4 +11,4 @@ Analysis of whole-genome sequencing (WGS) data from BioProject [PRJEB62494](http
 4. Variant calling with GATK HaplotypeCaller/Mutect2.
 5. Annotation using ENSEMBL VEP.
 
-[View Full Workflow →](workflow/scripts/analysis.sh)
+[View Full Workflow →](workflow/scripts/workflow.sh)
