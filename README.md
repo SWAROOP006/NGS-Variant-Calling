@@ -6,9 +6,10 @@ Analysis of whole-genome sequencing (WGS) data from BioProject [PRJEB62494](http
 
 ## Workflow Steps
 1. Download raw data using SRA Toolkit.
-2. Quality control with FastQC/fastp.
-3. Alignment with BWA.
-4. Variant calling with GATK HaplotypeCaller/Mutect2.
-5. Annotation using ENSEMBL VEP.
+2. Download Refrence genome and index with BWA.
+3. Quality control with FastQC/fastp.
+4. Alignment with BWA-MEM.
+5. Variant calling with GATK HaplotypeCaller/Mutect2.
+6. Annotation using ENSEMBL VEP.
 
 [View Full Workflow Code →](workflow/scripts/workflow-code.sh)
